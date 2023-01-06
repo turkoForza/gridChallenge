@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+                        "dan dan jon kira"
+                        "jean pat pat kira" ;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 200px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card{
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-img {
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid hsl(263, 76%, 64%);
+}
+
+header h3 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+header p {
+    font-size: 11px;
+    opacity: 50%;
+}
+
+.card-lead {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+.card-desc {
+    opacity: 70%;
+    text-align: justify;
+    line-height: 1.4rem;
+    text-indent: 5px;
+}
+
+#dan {
+    grid-area: dan;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 20px right 100px;
+}
+
+#jon {
+    grid-area: jon;
+    background-color: hsl(217, 19%, 35%);
+}
+
+#kira {
+    grid-area: kira;
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+#jean {
+    grid-area: jean;
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+#pat {
+    grid-area: pat;
+    background-color: hsl(219, 29%, 14%);
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr;
+        grid-template-areas: 
+                            "dan"
+                            "jon"
+                            "kira"
+                            "jean"
+                            "pat";
+        margin: 50px auto;
+    }
+
+
+    
+
+    
+}
