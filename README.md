@@ -2,4 +2,4 @@
 
 <p>This work is made for practising on "grid" element </p>
 
-<img> url (./work-on-air.png) </img>
+![design](https://github.com/turkoForza/gridChallenge/blob/main/design/work-on-air.png)
