@@ -4,6 +4,4 @@
 
 ![design](work-on-air.png)
 
-https://github.com/turkoForza/gridChallenge
-
 
